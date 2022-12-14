@@ -48,8 +48,8 @@ footer {
 
 /*Change size of slider images here. Sizes are currently fixed (not adaptive to screen) - keep these width and height values proportional to the dimensions of uploaded images*/
 img { 
-    width: 670px;
-    height: 850px;
+    width: 800px;
+    height: 686px;
 }
 
 /*Style attributes specifically for image 2, such as its position in the slider container and border stroke.*/
