@@ -79,14 +79,14 @@ img {
     -webkit-appearance: none;
     appearance: none;  
     position: absolute;
-    top: 366px;
-    left: 49.7%;
+    top: 255px;
+    left: 50%;
     transform: translate(-50%, -0%);
     background: #dddddd;
     opacity: 1;
     border-radius: 30px;
-    height: 5px;
-    width: 275px;
+    height: 7px;
+    width: 375px;
     max-height: 10px;
 }
 
