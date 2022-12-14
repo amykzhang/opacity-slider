@@ -1,4 +1,4 @@
-// Code © 2021 Ke Er Zhang, revised by 2022 Xinyi Li
+// Code © 2021 Ke Er Zhang, revised by YEAR NAME
 
 function rangeValue(value) {
   const root = document.documentElement;
