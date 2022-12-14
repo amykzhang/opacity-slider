@@ -1,4 +1,4 @@
-// Code © 2021 Ke Er Zhang, revised by YEAR NAME
+// Code © 2021 Ke Er Zhang
 
 function rangeValue(value) {
   const root = document.documentElement;
