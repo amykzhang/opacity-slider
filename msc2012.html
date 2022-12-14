@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        All Content and Artwork © 2022 Xinyi Li
+        Code © 2021 Ke Er Zhang, revised by 2022 Xinyi Li */
+    -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anatomy of the Borders of the Third Ventricle - Xinyi Li</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./msc2012.css" />
+</head>
+
+<body>  
+    <div class="container-fluid">
+        <div class="row" id="slider">
+            <div class="col" style="text-align:center;">
+                <!--Start of Slider-->
+                <div class="slider-container">
+                    <img class="img2" src="./image2.png"/>
+                    <img class="img1" src="./image1.png"/>
+                </div>
+
+                <input type="range" class="range" min="0" max="100" value="0" 
+                
+                onchange="rangeValue(this.value)"
+                    onmousemove="rangeValue(this.value)">
+                <!--End of Slider-->
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./msc2012.js"></script>
+</html>
