@@ -1,2 +1,2 @@
 # opacity-slider
-Opacity range slider for 2 images without text labels
+Opacity range slider without text labels. For 2 images.
