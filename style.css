@@ -43,6 +43,7 @@ footer {
 img { 
     width: 800px;
     height: 686px;
+    border-radius: 5px; /*rounded corners*/
 }
 
 /*Style attributes specifically for image 2, such as its position in the slider container and border stroke.*/
@@ -87,8 +88,8 @@ img {
     transform: translate(-50%, 0);
     height: 686px;
     width: 800px;
-    border-radius: 5px; /*stroke*/
-    border: 3px solid #000; /*rounded corners*/
+    border-radius: 5px; /*rounded corners*/
+    border: 3px solid #000; /*stroke*/
 }
 
 /* Style attributes for the range slider's button */ 
