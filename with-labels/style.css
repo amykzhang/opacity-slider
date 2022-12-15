@@ -45,16 +45,15 @@ footer {
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    width: 800px; /*EDIT*/
-    height: 686px; /*EDIT*/
-    border-radius: 5px; /*rounded corners*/
-    border: 3px solid #000; /*stroke*/
+    width: 804px; /*EDIT*/
+    height: 550px; /*EDIT*/
+    overflow: hidden;
 }
 
 /*Slider images. Sizes are fixed (not adaptive to screen) - keep these width and height values proportional to the dimensions of uploaded images*/
 img { 
     width: 800px; /*EDIT*/
-    height: 686px; /*EDIT*/
+    height: 613px; /*EDIT*/
     border-radius: 5px; /*rounded corners*/
 }
 
@@ -79,11 +78,7 @@ img {
 /* Style attributes for the range slider, such as its position on the screen, colour, height, width */
 .range {
     -webkit-appearance: none;
-    appearance: none;  
-    position: absolute;
-    top: 605px; /*EDIT*/
-    left: 50%;
-    transform: translate(-50%, -0%);
+    appearance: none;
     background: #dddddd;
     opacity: 1;
     border-radius: 30px;
