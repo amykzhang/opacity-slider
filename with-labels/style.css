@@ -1,0 +1,110 @@
+/* Code © 2021 Ke Er Zhang */
+
+:root {
+    --opacityImg1: 1;
+    --opacityImg2: 1;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:100vh;
+    margin: 0 0;
+    overflow-x:hidden;
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+footer {
+    color: #767676;
+    font-size:small;
+    margin-top:2.5em;
+}
+
+/*Container holding images and range slider*/
+.slider-container { 
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 800px; /*EDIT*/
+    height: 686px; /*EDIT*/
+    border-radius: 5px; /*rounded corners*/
+    border: 3px solid #000; /*stroke*/
+}
+
+/*Slider images. Sizes are fixed (not adaptive to screen) - keep these width and height values proportional to the dimensions of uploaded images*/
+img { 
+    width: 800px; /*EDIT*/
+    height: 686px; /*EDIT*/
+    border-radius: 5px; /*rounded corners*/
+}
+
+/*Style attributes specifically for image 2*/
+.img2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: var(--opacityImg2);
+}
+
+/*Style attributes specifically for image 1*/
+.img1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: var(--opacityImg1);
+}
+
+/* Style attributes for the range slider, such as its position on the screen, colour, height, width */
+.range {
+    -webkit-appearance: none;
+    appearance: none;  
+    position: absolute;
+    top: 605px; /*EDIT*/
+    left: 50%;
+    transform: translate(-50%, -0%);
+    background: #dddddd;
+    opacity: 1;
+    border-radius: 30px;
+    height: 7px; /*EDIT*/
+    width: 375px; /*EDIT*/
+    max-height: 10px;
+}
+
+/* Style attributes for the range slider's button */ 
+.range::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    position: relative;
+    cursor: pointer;
+    background: #000;
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+}  
+
+/* Style attributes for the range slider's button on hover */ 
+.range:hover::-webkit-slider-thumb {
+    background: #182852;
+}
