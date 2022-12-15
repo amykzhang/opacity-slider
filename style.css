@@ -36,17 +36,29 @@ body {
 footer {
     color: #767676;
     font-size:small;
-    margin-top:2em;
+    margin-top:2.5em;
 }
 
-/*Change size of slider images here. Sizes are currently fixed (not adaptive to screen) - keep these width and height values proportional to the dimensions of uploaded images*/
+/*Container holding images and range slider*/
+.slider-container { 
+    position: relative;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 800px; /*EDIT*/
+    height: 686px; /*EDIT*/
+    border-radius: 5px; /*rounded corners*/
+    border: 3px solid #000; /*stroke*/
+}
+
+/*Slider images. Sizes are fixed (not adaptive to screen) - keep these width and height values proportional to the dimensions of uploaded images*/
 img { 
-    width: 800px;
-    height: 686px;
+    width: 800px; /*EDIT*/
+    height: 686px; /*EDIT*/
     border-radius: 5px; /*rounded corners*/
 }
 
-/*Style attributes specifically for image 2, such as its position in the slider container and border stroke.*/
+/*Style attributes specifically for image 2*/
 .img2 {
     position: absolute;
     top: 50%;
@@ -55,7 +67,7 @@ img {
     opacity: var(--opacityImg2);
 }
 
-/*Style attributes specifically for image 1, such as its position in the slider container and border stroke.*/
+/*Style attributes specifically for image 1*/
 .img1 {
     position: absolute;
     top: 50%;
@@ -69,27 +81,15 @@ img {
     -webkit-appearance: none;
     appearance: none;  
     position: absolute;
-    top: 605px;
+    top: 605px; /*EDIT*/
     left: 50%;
     transform: translate(-50%, -0%);
     background: #dddddd;
     opacity: 1;
     border-radius: 30px;
-    height: 7px;
-    width: 375px;
+    height: 7px; /*EDIT*/
+    width: 375px; /*EDIT*/
     max-height: 10px;
-}
-
-/*container holding images and range slider*/
-.slider-container { 
-    position: relative;
-    top: 0;
-    left: 50%;
-    transform: translate(-50%, 0);
-    height: 686px;
-    width: 800px;
-    border-radius: 5px; /*rounded corners*/
-    border: 3px solid #000; /*stroke*/
 }
 
 /* Style attributes for the range slider's button */ 
